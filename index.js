@@ -21,7 +21,7 @@ const server = new ApolloServer({
 
 
 const corsMiddleware = (req, res) => {
-    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:5173'); // Replace with your client's domain
+    res.setHeader('Access-Control-Allow-Origin', 'https://quote-client.vercel.app'); // Replace with your client's domain
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
     res.setHeader('Access-Control-Allow-Credentials', 'true');
